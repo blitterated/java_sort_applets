@@ -1,0 +1,217 @@
+<html>
+<!-- @(#)sort.html	1.9 95/03/20
+ * Copyright (c) 1994 Sun Microsystems, Inc. All Rights Reserved.
+ *
+ * Permission to use, copy, modify, and distribute this software
+ * and its documentation for NON-COMMERCIAL purposes and without
+ * fee is hereby granted provided that this copyright notice
+ * appears in all copies. Please refer to the file "copyright.html"
+ * for further important copyright and licensing information.
+ *
+ * SUN MAKES NO REPRESENTATIONS OR WARRANTIES ABOUT THE SUITABILITY OF
+ * THE SOFTWARE, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ * PARTICULAR PURPOSE, OR NON-INFRINGEMENT. SUN SHALL NOT BE LIABLE FOR
+ * ANY DAMAGES SUFFERED BY LICENSEE AS A RESULT OF USING, MODIFYING OR
+ * DISTRIBUTING THIS SOFTWARE OR ITS DERIVATIVES.
+-->
+<!-- Modified by Jason Harrison, Department of Computer Science
+ * University of British Columbia, June 24 1995
+ *
+ * Added: Insertion, Selection, Shell, Heap and Merge sorts
+ * Changed: description.
+ *
+ * Copyleft 1995 Jason Harrison
+-->
+<head><script type="text/javascript" src="../../../../../../_static/js/bundle-playback.js%3Fv=HxkREWBo" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../../_static/js/wombat.js%3Fv=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="../../../../../../_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://www.cs.ubc.ca:80/~harrison/Java/index.html","20100902050848","https://web.archive.org/","web","/_static/",
+	      "1283404128");
+</script>
+<link rel="stylesheet" type="text/css" href="../../../../../../_static/css/banner-styles.css%3Fv=S1zqJCYt.css" />
+<link rel="stylesheet" type="text/css" href="../../../../../../_static/css/iconochive.css%3Fv=3PDvdIFv.css" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Sorting Algorithms Demo</title>
+</head>
+
+<body>
+<p>This page is based upon <a href="https://web.archive.org/web/20100902050848/http://www.cs.ubc.ca/spider/harrison/Java/sorting-demo.html"><em>http://www.cs.ubc.ca/spider/harrison/Java/sorting-demo.html</em></a>.
+Modified by Guido Bunsen.</p>
+
+<h1>Sorting Algorithms</h1>
+<hr>
+
+<p>
+We all know that Quicksort is one of the fastest algorithms for
+sorting.  It's not often, however, that we get a chance to see exactly
+<em>how</em> fast Quicksort really is.  The following applets chart
+the progress of several common sorting algorthms while sorting an
+array of data using constant space algorithms. (This is inspired by 
+the algorithm animation work at
+<a href="https://web.archive.org/web/20100902050848/http://www.cs.brown.edu/">Brown University</a> and the video <em>Sorting out Sorting</em> from the University of Toronto (circa 1970!).)
+</p>
+<em>Click on each applet to see the algorithm run.</em>
+<em>Click on the name of the algorithm to see the source.</em>
+
+
+
+<table cellspacing="2" cellpadding="5" border>
+<tr>
+<td> <a href="BubbleSort2Algorithm.java"><b>Bubble Sort</b>
+<br> (by James Gosling and <br> Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="BubbleSort2"></applet></td>
+
+<td><a href="BidirectionalBubbleSortAlgorithm.java"><b>Bi-Directional
+       Bubble Sort</b> <br> (by James Gosling)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="BidirectionalBubbleSort"></applet></td>
+
+<td><a href="SelectionSortAlgorithm.java"><b>Selection
+Sort</b> <br> (by Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="SelectionSort"></applet></td>
+</tr>
+
+<tr>
+<td><a href="ShakerSortAlgorithm.java"><b>Shaker
+Sort</b> <br> (by Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="ShakerSort"></applet></td>
+
+<td><a href="InsertionSortAlgorithm.java"><b>Insertion
+Sort</b> <br> (by Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="InsertionSort"></applet></td>
+
+<td><a href="MergeSortAlgorithm.java"><b>In-Place Merge Sort</b> <br> (by
+Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="MergeSort"></applet></td>
+</tr>
+
+<tr>
+<td><a href="ExtraStorageMergeSortAlgorithm.java"><b>Double Storage Merge Sort</b> <br> (by
+Jack Snoeyink)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="ExtraStorageMergeSort"></applet></td>
+
+<td><a href="CombSort11Algorithm.java"><b>Comb Sort 11</b> <br> (by
+Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="CombSort11"></applet></td>
+
+<td><a href="ShellSortAlgorithm.java"><b>Shell Sort</b> <br> (by
+Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="ShellSort"></applet></td>
+</tr>
+
+<tr>
+<td><a href="HeapSortAlgorithm.java"><b>Heap Sort</b> <br> (by
+Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="HeapSort"></applet></td>
+
+<td><a href="QSortAlgorithm.java"><b>Quick Sort</b> <br> (by
+James Gosling)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="QSort"></applet></td>
+
+<td><a href="QubbleSortAlgorithm.java"><b>Quick Sort with
+Bubblesort</b> <br> (by Jim Boritz)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="QubbleSort"></applet></td>
+</tr>
+
+<tr>
+<td><a href="EQSortAlgorithm.java"><b>Enhanced Quick Sort</b>
+<br> (by Jim Boritz)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="EQSort"></applet></td>
+
+<td><a href="FastQSortAlgorithm.java"><b>Fast Quick Sort</b> <br>
+(by Denis Ahrens)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="FastQSort"></applet></td>
+       
+<td><a href="SwapSortAlgorithm.java"><b>Swap Sort</b> <br> (by
+Jason Harrison)</a>
+<p>
+<applet code="SortItem.class" width="124" height="124"><param name="alg" value="SwapSort"></applet></td>
+</tr>
+
+</table>
+
+<hr>
+
+<p> If you're going to make a copy of this demo, you'll need to also
+copy the the <a href="SortAlgorithm.java">SortAlgorithm</a> class and
+the <a href="SortItem.java">SortItem</a> class.  </p>
+
+Sorting routines to be added:
+<ul>
+  <li> Three way merge.
+  <li> Quicksort with duplicated pivots.
+  <li> Random Swap sort.
+</ul>
+            
+
+<hr><p>
+Originally created by
+<address>
+<a href="https://web.archive.org/web/20100902050848/http://java.sun.com/people/jag/"><img src="https://web.archive.org/web/20100902050848im_/http://java.sun.com/people/jag/jag.gif"></a>
+James Gosling, jag@firstperson.com
+</address>
+And modified by
+<address>
+<a href="https://web.archive.org/web/20100902050848/http://www.cs.ubc.ca/spider/harrison"><img src="https://web.archive.org/web/20100902050848im_/http://www.cs.ubc.ca/spider/harrison/Pictures/me-little.gif"></a>
+Jason Harrison, harrison@cs.ubc.ca
+</address>
+and
+<address>
+<a href="https://web.archive.org/web/20100902050848/http://www.cs.ubc.ca/spider/boritz"><img src="../../../../../20100902050848im_/http:/www.cs.ubc.ca/spider/harrison/Pictures/Jim.gif"></a>
+Jim Boritz, boritz@cs.ubc.ca
+</address>
+
+<p> Thanks to <a href="https://web.archive.org/web/20100902050848/http://www.cs.ubc.ca/spider/duprat">Jean-Luc
+Duprat</a> who rebuilt this page for Netscape 2.0 and recompiled the
+applets with the <a href="https://web.archive.org/web/20100902050848/http://java.sun.com/">JDK</a>.</p>
+
+
+<hr>
+This is http://www.cs.ubc.ca/spider/harrison/Java/sorting-demo.html.<br>
+Maintained by <a href="https://web.archive.org/web/20100902050848/http://www.cs.ubc.ca/spider/harrison">Jason Harrison</a>
+(<a href="https://web.archive.org/web/20100902050848/mailto:harrison@cs.ubc.ca">harrison@cs.ubc.ca</a>).
+<!-- hhmts start -->
+Last modified: Tue Jan 13 14:58:10 1998.
+<!-- hhmts end -->
+</body>
+</html>
+
+
+<!--
+     FILE ARCHIVED ON 05:08:48 Sep 02, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:42:20 Nov 30, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.768
+  exclusion.robots: 0.037
+  exclusion.robots.policy: 0.023
+  esindex: 0.015
+  cdx.remote: 6.206
+  LoadShardBlock: 237.941 (3)
+  PetaboxLoader3.datanode: 123.624 (4)
+  PetaboxLoader3.resolve: 121.872 (2)
+  load_resource: 144.378
+-->
