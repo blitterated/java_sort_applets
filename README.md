@@ -1,4 +1,4 @@
-# Jason Harriss' and James Gosling's Java Applet Sorting Demos
+# Jason Harrison's and James Gosling's Java Applet Sorting Demos
 
 ## Background
 
